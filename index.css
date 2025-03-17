@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    line-height: 25px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.descripcion {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.contenido {
+    margin: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.info {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.oculto {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.presentacion{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.contenedor_presentacion{
+    background-image: url(/presentacion_fondo.png);
+    justify-content: center;
+    background-position: center;
+    background-attachment: fixed;
+}   
+
+.presentacion img{
+    border-radius: 50%;
+    width: 234px;
+    height: 234px;
+}
+.presentacion p b{
+    position: relative;
+    left: 70px;
+}
+
+
+
+
+
+
+
+
+
+.ejemplo_cdm {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(177, 177, 177);
+    padding: 15px;
+    margin: 5px;
+    background-color: rgba(247, 241, 241, 0.8); /* Color original con transparencia */
+}
+
+button {
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: rgb(112, 174, 231);
+    color: rgb(0, 0, 0);
+}
+
+/* Lista de opciones */
+li {
+    font-size: 17px;
+}
+
+.opciones {
+    width: 100%;
+    margin: 5px;
+}
+
+.opciones ul {
+    border: 1px solid rgb(161, 161, 161);
+    margin: auto;
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con 80% de transparencia */
+}
+
+.opciones ul li {
+    padding: 6px;
+}
+
+.ejemplos_realizados {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor_padre {
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+    background-image: url(/imagen_fondo.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Capa semitransparente sobre la imagen de fondo */
+.contenedor_padre::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad aquí */
+    z-index: 0;
+}
+
+/* Asegurar que el contenido esté sobre la capa semitransparente */
+.contenedor_padre * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.contenedor_videos{
+    background-image: url(/imagen_fondo2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.contenedor_videos::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad aquí */
+    z-index: 0;
+}
+.contenedor_videos * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.elementos_tasklist {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+}
+
+.elemento_task {
+    width: 40%;
+    border: 1px solid rgb(214, 206, 206);
+    margin: auto;
+}
+
+.elemento_task video {
+    margin-top: 10px;
+    width: 400px;
+    position: relative;
+    left: 50px;
+}
+
+h3 {
+    padding: 5px;
+}
+
+
+
+/*     Aca empieza lo de linux  */
+
+.linux_presentacion{
+    margin-top: 400px;
+
+}
+
+
+/* Asegurar que el contenido esté sobre la capa semitransparente */
+
+
+
+
+
+
+
+.contenedor_linux{
+    
+    margin-top: 400px;
+    width: 100%;
+    height: 70vh;
+    margin-left: 6px;
+}
+
+.contenedor_items_linux--1{
+    height:100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: url(linux_fondo1\ \(2\).png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor_items_linux--2{
+    height:100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: url(linux_fondo1\ \(2\).png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor_items_linux--3{
+    height:100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: url(linux_fondo1\ \(2\).png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+

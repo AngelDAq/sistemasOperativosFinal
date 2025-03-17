@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <title>Programacion pagina</title>
+</head>
+<body>
+
+    <section>
+        <div class="contenedor_presentacion">
+            <div class="presentacion">
+                <img src="foto.jpg">
+                <div>
+                    <h4>Angel Daniel Quintero Roa</h4>
+                    <p>Sistemas Informaticos</p>
+                    <p><b>ESEIT</b></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Los metodos existentes en windows para reconocer los procesos activos son los mas importantes para reconocer lo que se esta ejecutando</p>
+                </div>
+                <video src=""></video>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <h3>Metodos existentes Windows</h3>
+    <h3>Herramientas integradas en cada sistema</h3>
+
+    <h1>Windows</h1>
+<div class="contenedor_padre">
+    <div>
+        <div class="contenedor_imagenes">
+            <div class="descripcion_taslist">
+                <h2>Tasklist</h2>
+                <p><b>Descripcion:</b>Muestra todos los procesos en ejecucuion</p>
+            </div>
+            <div class="ejemplo_cdm">
+                <h6>Sintaxis</h6>
+                <h5>cdm</h5>
+                <p>tasklist [opciones]</p>
+            </div>
+            <div class="opciones">
+                <h3>Opciones mas usadas</h3>
+                <ul>
+                    <li>/v, <i>Muestra detalles adicionales(PID, estado, CPU, etc)</i></li>
+                    <li>/fi, "condicion" <i>filtra resultados segun criterios</i></li>
+                    <li>/svc, <i>Muestra los servicios en ejecucion dentro de cada proceso</i></li>
+                    <li>/m, <i>Muestra los modulos (bibliotecas DLL) usados por cada proceso</i> </li>
+                    <li>/fo, <i>Formato de salida</i> </li>
+                </ul>
+            </div>
+            <div>
+                <!-- Para los ejemplos h4-->
+                <h4>Ejemplo:</h4>
+                <!--Para cmd h5-->
+                <div class="ejemplo_cdm">
+                    <h5>cmd</h5>
+                    <p>tasklist /o TABLE /fi "STATUS eq running" </p>
+                </div>
+            
+             
+    
+                
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div>
+        <div>
+            <div class="descripcion_taslist">
+                <h2>Get-Process (PowerShell)</h2>
+                <p><b>Descripcion:</b>Lista los procesos en ejecucuon</p>
+            </div>
+            <div class="ejemplo_cdm">
+                <h6>Sintaxis:</h6>
+                <h5>powershell</h5>
+                <p>Get-Process [nombre_proceso] [opciones]</p>
+            </div>
+            <div class="opciones">
+                <h3>Opciones mas usadas</h3>
+                <ul>
+                    <li>-Name, <i>Filtra por nombre</i></li>
+                    <li>-Id, <i>Filtra por ID del proceso</i></li>
+                    <li>Format-Table -AutoSize <i>presenta la informacion de forma legible</i></li>
+                </ul>
+        
+            </div>
+            <div>
+                <!-- Para los ejemplos h4-->
+                <h4>Ejemplo:</h4>
+                <!--Para cmd h5-->
+                <div class="ejemplo_cdm">
+                    <h5>powershell</h5>
+                    <p>Get-Process -Name chrome </p>
+                </div>
+                <div  class="ejemplo">
+                    
+                    <!--Aca aparecera una informacion cuando se de click-->
+                    <div></div>
+                    <!--<h3>Campos retornados</h3>
+                    <p>Se puede apreciar que....... aqui despues colocaras info</p>
+                    -->
+                </div>
+                
+    
+
+            </div>
+    
+        </div>
+
+    </div>
+
+
+    <div>
+        <div>
+            <div class="descripcion_taslist">
+                <h2>WMIC</h2>
+                <p><b>Descripcion:</b>Proporciona informacion avanzada sobre procesos</p>
+            </div>
+            <div class="ejemplo_cdm">
+                <h6>Sintaxis</h6>
+                <h5>cdm</h5>
+                <p>wmic process get [campo1, campo2]</p>
+            </div>
+            <div class="opciones">
+                <h3>Opciones mas usadas</h3>
+                <ul>
+                    <li>where <i>Filtra por condiciones</i></li>
+                    <li>list full, <i>muestra todos los detalles</i></li>
+
+                </ul>
+            </div>
+            <div>
+                <!-- Para los ejemplos h4-->
+                <h4>Ejemplo:</h4>
+                <!--Para cmd h5-->
+                <div class="ejemplo_cdm">
+                    <h5>cmd</h5>
+                    <p>wmic process where "name=`explorer.exe`" get ProcessId, ExecutablePath</p>
+                </div>
+            
+                <div  class="ejemplo">
+        
+                    <!--Aca aparecera una informacion cuando se de click-->
+                    <div></div>
+                    <!--<h3>Campos retornados</h3>
+                    <p>Se puede apreciar que....... aqui despues colocaras info</p>
+                    -->
+                </div>
+    
+                
+    
+            </div>
+    
+        </div>
+
+    </div>
+</div>
+    <section class="contenedor_videos">
+        <h2>Proceso de tasklist</h2>
+        <div class="elementos_tasklist">
+            <div class="elemento_task">
+                <h3>opcion tasklist</h3>
+                <p>Al Ingresar al cmd y poner este comando mostrara todos los procesos</p>
+                <video controls>
+                    <source src="video_1_tasklist.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+    
+            </div>
+            <div class="elemento_task">
+                <h3>opcion /v</h3>
+                <p>Al Ingresar al cmd y poner este comando mostrara estados de CPU mas que todo detalles adicionales</p>
+                <video controls>
+                    <source src="video_2_v.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+                
+
+            </div>
+            <div class="elemento_task">
+                <h3>opcion /m</h3>
+                <p>Al Ingresar al cmd y poner este comando mostrara las bibliotecas usadas para cada proceso</p>
+                <video controls>
+                    <source src="video_3_m.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+        
+
+            </div>
+            <div class="elemento_task">
+                <h3>opcion /svc</h3>
+                <p>Muestra los servicios en ejecucion dentro de cada proceso</p>
+                <video controls>
+                    <source src="video_4_svc.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
+
+            </div>
+
+        </div>
+    </section>
+
+
+<div class="contenedor_linux">
+    <h2>Linux</h2>
+    <div class="contenedor_items_linux--1">
+        <div>
+            <h3>Descripcion</h3>
+            <p>Muesta procesos en ejecucion </p>
+        </div>
+        <div>
+            <h3>opciones mas usadas</h3>
+            <ul>
+                <li>Aux, Muestra todos los procesos con detalles</li>
+                <li>e, Muestra todos los procesos del sistema</li>
+                <li>f, Muestra detalles extendidos</li>
+            </ul>
+        </div>
+        <div>
+            <h3>ejemplo</h3>
+            <div class="ejemplo_cdm">
+                <h5>bash</h5>
+                <p>ps aux -- grep firefox </p>
+            </div>
+            
+    
+    
+        </div>
+    </div>
+
+        
+            
+    
+    
+        </div>
+    </div>
+
+            
+    
+    
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<script src="index.js"></script>    
+</body>
+</html>
